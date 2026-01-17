@@ -29,7 +29,7 @@ A beautiful, minimal Pomodoro timer Progressive Web App (PWA) built with React a
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/PomodoroLite.git
+git clone https://github.com/ssone95/PomodoroLite.git
 cd PomodoroLite
 
 # Install dependencies
@@ -78,7 +78,7 @@ Builds the app to the `build` folder, optimized for production.
 
 ### Vercel
 
-1. Push your code to GitHub
+1. Push the code to GitHub
 2. Go to [vercel.com](https://vercel.com) and import your repository
 3. Vercel auto-detects Create React App - just click Deploy!
 
@@ -90,7 +90,7 @@ vercel
 
 ### Netlify
 
-1. Push your code to GitHub
+1. Push the code to GitHub
 2. Go to [netlify.com](https://netlify.com) and import your repository
 3. Build settings:
    - **Build command:** `npm run build`
