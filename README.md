@@ -146,6 +146,22 @@ This app works offline and can be installed on your device:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## 🔔 Developer Note
+
+This project was born out of frustration with the current state of Pomodoro apps:
+
+- 🚫 **No ads** - Ever
+- 🚫 **No paywalls** - All features are free
+- 🚫 **No "upgrade to premium" popups** - What you see is what you get
+- 🚫 **No tracking or analytics** - Your data stays on your device
+- 🚫 **No cloud dependencies** - Works entirely offline after first load
+
+Just a single static deployment and your browser — that's it.
+
+This is a pet project that came from a bit of free time and a lot of dissatisfaction with existing solutions. It was designed to be **lightweight**, **fast to build**, and **pleasant to use**.
+
+> **Note:** There's no cloud sync by design. Your timer configurations are stored in your browser's localStorage. This keeps things simple and private.
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
