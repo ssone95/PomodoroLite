@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PomodoroLite/static/css/main.558d9ead.css",
+    "main.js": "/PomodoroLite/static/js/main.8406dfeb.js",
+    "service-worker.js": "/PomodoroLite/service-worker.js",
+    "index.html": "/PomodoroLite/index.html",
+    "main.558d9ead.css.map": "/PomodoroLite/static/css/main.558d9ead.css.map",
+    "main.8406dfeb.js.map": "/PomodoroLite/static/js/main.8406dfeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.558d9ead.css",
+    "static/js/main.8406dfeb.js"
+  ]
+}
