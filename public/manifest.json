@@ -1,0 +1,30 @@
+{
+  "short_name": "PomodoroLite",
+  "name": "Pomodoro Lite",
+  "description": "A beautiful, minimal Pomodoro timer PWA with custom timers, wake lock, and offline support",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#667eea",
+  "background_color": "#1a1a2e",
+  "categories": ["productivity", "utilities"]
+}

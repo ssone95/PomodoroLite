@@ -1,0 +1,91 @@
+.clock-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.clock-picker__svg {
+  width: 280px;
+  height: 280px;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+}
+
+.clock-picker__svg--dragging {
+  cursor: grabbing;
+}
+
+.clock-picker__bg {
+  fill: rgba(255, 255, 255, 0.05);
+}
+
+.clock-picker__track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 8;
+}
+
+.clock-picker__arc {
+  stroke: #667eea;
+  stroke-width: 8;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.5));
+}
+
+.clock-picker__tick {
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 1;
+}
+
+.clock-picker__tick--medium {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 1.5;
+}
+
+.clock-picker__tick--major {
+  stroke: rgba(255, 255, 255, 0.6);
+  stroke-width: 2;
+}
+
+.clock-picker__label {
+  fill: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.clock-picker__handle {
+  fill: #667eea;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  cursor: grab;
+  transition: transform 0.1s ease;
+}
+
+.clock-picker__svg--dragging .clock-picker__handle {
+  cursor: grabbing;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.clock-picker__handle-inner {
+  fill: white;
+}
+
+.clock-picker__time {
+  fill: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.clock-picker__time-label {
+  fill: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Hover effect on handle */
+.clock-picker__svg:hover .clock-picker__handle {
+  filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.6));
+}

@@ -1,0 +1,270 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.timer--work {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.timer--shortBreak {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.timer--longBreak {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.timer--lunchBreak {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+
+.timer--shortTest {
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+}
+
+.timer--custom {
+  background: linear-gradient(135deg, #834d9b 0%, #d04ed6 100%);
+}
+
+/* Header with status and settings */
+.timer__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
+
+.timer__settings-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timer__settings-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(45deg);
+}
+
+/* Status Indicator */
+.timer__status {
+  min-height: 1.5rem;
+}
+
+.timer__status-indicator {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timer__status-indicator--active {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Alert Banner */
+.timer__alert {
+  background: rgba(255, 193, 7, 0.9);
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mode Toggle Buttons */
+.timer__modes {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.timer__mode-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timer__mode-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timer__mode-btn--active {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+/* Timer Display */
+.timer__display {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer__svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+}
+
+.timer__circle-bg {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.timer__circle-progress {
+  stroke: white;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.timer__time {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* Controls */
+.timer__controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer__btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timer__btn--start {
+  background: white;
+  color: #667eea;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.timer__btn--start:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.timer__btn--pause {
+  background: rgba(255, 255, 255, 0.9);
+  color: #e74c3c;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.timer__btn--pause:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.timer__btn--reset {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.timer__btn--reset:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Sessions */
+.timer__sessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.timer__sessions-count {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.timer__sessions-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .timer {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .timer__modes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .timer__mode-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .timer__display {
+    width: 240px;
+    height: 240px;
+  }
+
+  .timer__time {
+    font-size: 3rem;
+  }
+
+  .timer__btn {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+  }
+}
