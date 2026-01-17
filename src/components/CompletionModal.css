@@ -1,0 +1,111 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  max-width: 90%;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.modal--work .modal__title {
+  color: #667eea;
+}
+
+.modal--shortBreak .modal__title {
+  color: #11998e;
+}
+
+.modal--longBreak .modal__title {
+  color: #4facfe;
+}
+
+.modal--lunchBreak .modal__title {
+  color: #f7971e;
+}
+
+.modal__subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 1.5rem;
+}
+
+.modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal__btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal__btn--restart {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.modal__btn--restart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.modal__btn--dismiss {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.modal__btn--dismiss:hover {
+  background: #e0e0e0;
+}

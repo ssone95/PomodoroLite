@@ -1,0 +1,270 @@
+.settings {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 2rem;
+}
+
+.settings__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.settings__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.settings__close {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.settings__close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.settings__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings__section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings__section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.settings__timer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.settings__timer-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.settings__timer-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settings__timer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.settings__timer-name {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings__badge {
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: rgba(102, 126, 234, 0.3);
+  color: #a8b5ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.settings__timer-duration {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.settings__timer-edit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.settings__timer-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.settings__input {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.settings__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.settings__input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.settings__input--small {
+  flex: 0 0 80px;
+}
+
+.settings__unit {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.settings__add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.settings__btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.settings__btn--edit {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.settings__btn--edit:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.settings__btn--delete {
+  background: rgba(231, 76, 60, 0.2);
+  color: #ff6b6b;
+}
+
+.settings__btn--delete:hover {
+  background: rgba(231, 76, 60, 0.3);
+}
+
+.settings__btn--save {
+  background: #667eea;
+  color: white;
+}
+
+.settings__btn--save:hover {
+  background: #5a6fd6;
+}
+
+.settings__btn--cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.settings__btn--cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.settings__btn--add {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.settings__btn--add:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.settings__btn--add:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings__btn--reset {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.settings__btn--reset:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .settings {
+    padding: 1rem;
+  }
+
+  .settings__timer-view {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .settings__timer-actions {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .settings__btn {
+    flex: 1;
+  }
+
+  .settings__add-form {
+    flex-direction: column;
+  }
+
+  .settings__input {
+    width: 100%;
+  }
+
+  .settings__input--small {
+    flex: 1;
+  }
+
+  .settings__btn--add {
+    width: 100%;
+  }
+}
