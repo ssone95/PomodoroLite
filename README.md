@@ -52,6 +52,8 @@ npm run build
 Builds the app to the `build` folder, optimized for production.
 
 ## 🌐 Deployment
+If you want to deploy it yourself - here are a few options. 
+> I'd recommend going with Github Pages, since it's the simplest, and fastest variant, as this app has no external service dependencies.
 
 ### GitHub Pages
 
