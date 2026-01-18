@@ -7,7 +7,7 @@ A beautiful, minimal Pomodoro timer Progressive Web App (PWA) built with React a
 ![Pomodoro Lite](https://img.shields.io/badge/PWA-Ready-brightgreen)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-NonCommercial-blue)
 
 ## ✨ Features
 
