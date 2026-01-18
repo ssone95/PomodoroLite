@@ -169,7 +169,7 @@ This is a pet project that came from a bit of free time and a lot of dissatisfac
 
 This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
 
-### Summary (non-legal):
+### Summary:
 - ✅ Free for personal use and self-deployment
 - ✅ Free to fork and modify for non-commercial purposes
 - ❌ No selling
