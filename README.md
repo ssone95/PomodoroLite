@@ -165,10 +165,20 @@ Just a single static deployment and your browser — that's it.
 This is a pet project that came from a bit of free time and a lot of dissatisfaction with existing solutions. It was designed to be **lightweight**, **fast to build**, and **pleasant to use**.
 
 > **Note:** There's no cloud sync by design. Your timer configurations are stored in your browser's localStorage. This keeps things simple and private.
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+### Summary (non-legal):
+- ✅ Free for personal use and self-deployment
+- ✅ Free to fork and modify for non-commercial purposes
+- ❌ No selling
+- ❌ No subscriptions
+- ❌ No paid hosting or SaaS
+- ❌ No app-store monetization
+- ❌ Any kind of monetization is strictly forbidden
+
+See the [LICENSE](LICENSE) file for full terms.
 
 ---
 
